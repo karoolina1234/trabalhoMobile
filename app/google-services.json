@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "659483738668",
+    "firebase_url": "https://android-a9e24.firebaseio.com",
+    "project_id": "android-a9e24",
+    "storage_bucket": "android-a9e24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659483738668:android:827d2de6c9a92ba88e0789",
+        "android_client_info": {
+          "package_name": "com.example.apptrabalho"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659483738668-cga1ot176gqvdk0gjudnnbj6ns9n39qd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbvgRSZQldKzj2EVIznZUszkRwgS7dJxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659483738668-cga1ot176gqvdk0gjudnnbj6ns9n39qd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
