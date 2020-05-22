@@ -20,7 +20,11 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_lista_alunos" />
+    <include
+        android:id="@+id/exibir_lista"
+        layout="@layout/content_lista_alunos"
+        app:layout_anchor="@+id/exibir_lista"
+        app:layout_anchorGravity="center" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
