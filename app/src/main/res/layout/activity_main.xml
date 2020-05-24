@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,43 +11,44 @@
         android:id="@+id/etEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="97dp"
         android:ems="10"
         android:hint="E-mail"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.429"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/etSenha"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.335" />
+        tools:layout_editor_absoluteX="79dp" />
 
     <EditText
         android:id="@+id/etSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginBottom="137dp"
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
-        app:layout_constraintTop_toBottomOf="@+id/etEmail"
-        tools:layout_editor_absoluteX="85dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/btnEntrar"
+        tools:layout_editor_absoluteX="79dp" />
 
     <Button
         android:id="@+id/btnEntrar"
         android:layout_width="207dp"
         android:layout_height="53dp"
+        android:layout_marginBottom="108dp"
         android:backgroundTint="@color/colorPrimary"
         android:text="Entrar"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="403dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrar"
+        tools:layout_editor_absoluteX="85dp" />
 
     <Button
         android:id="@+id/btnCadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="156dp"
         android:backgroundTint="#FFFFFF"
         android:text="Cadastre-se"
-        tools:layout_editor_absoluteX="207dp"
-        tools:layout_editor_absoluteY="618dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="212dp" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

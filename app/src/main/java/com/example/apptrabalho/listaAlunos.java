@@ -52,7 +52,7 @@ public class listaAlunos extends AppCompatActivity {
             }
         });
 
-        alunos = findViewById( R.id.exibir_lista );
+        alunos = findViewById( R.id.lvAlunos );
         alunosList = new ArrayList<>();
         adapter = new ArrayAdapter<Aluno>(
                 listaAlunos.this, android.R.layout.simple_list_item_1, alunosList);
@@ -67,7 +67,7 @@ public class listaAlunos extends AppCompatActivity {
         alunosList.clear();
         database = FirebaseDatabase.getInstance();
         reference = database.getReference();
-        query = reference.child("produtos").orderByChild("nome");
+        query = reference.child("alunos").orderByChild("nome");
 
         childEventListener = new ChildEventListener() {
             @Override
